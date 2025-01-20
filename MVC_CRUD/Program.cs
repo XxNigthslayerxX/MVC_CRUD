@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<MvccrudContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("SqlCon")));
+        options.UseSqlServer(builder.Configuration.GetConnectionString("SqlCon")));
 
 var app = builder.Build();
 
